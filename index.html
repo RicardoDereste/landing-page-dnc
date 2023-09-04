@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/index.js" defer></script>
+        <title>DNC School</title>
+    </head>
+    <body>
+        <!-- Menu -->
+        <div id="menu">
+            <a href="https://www.escoladnc.com.br">
+                <img src="./assets/img/logo.svg" id="logo" alt="DNC Logo">
+            </a>
+            <h1 id="main-title">Take the first steps of <br> your career in Technology</h1>
+            <p id="main-text">Enroll in DNC School's free Introduction to <br> Technology course and learn the fundamental <br> principles for building effective experiences.</p>
+        </div>
+
+        <!-- Info -->
+        <div id="info">            
+            <p class="info-text"><img src="./assets/icons/certificate.svg" class="icon" alt="certificate"> Certificate of completion</p>            
+            <p class="info-text"><img src="./assets/icons/clock.svg" class="icon" alt="clock"> 4 hours of content</p>            
+            <p class="info-text"><img src="./assets/icons/camera.svg" class="icon" alt="camera"> Recorded online classes</p>
+        </div>
+
+        <!-- Video -->
+        <div id="video-section">
+            <iframe id="video" width="502" height="283" src="https://www.youtube.com/embed/ITxGkd9h4n4?si=41Wiliyprexy32Ts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <div>
+                <h1 id="video-title">
+                    Learn from experts and <br>
+                    start your first project
+                </h1> <br><br>
+                <p id="video-text">
+                    Learn about the development process and understand <br>
+                    how to use the main methods and tools in the area to <br>
+                    solve complex problems.<br><br>
+    
+                    Earn your certificate and develop a practical project<br>
+                    to apply your knowledge.
+                </p>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div id="carousel">
+            <h1 id="carousel-title">More than 500 students have already started their studies</h1>
+
+            <div id="div-cards">
+                <img id="left-arrow" onclick="moveToLeft()" class="arrow" src="./assets/icons/left-arrow.svg" alt="left arrow">
+                <img id="leonardo" class="card" src="./assets/cards/leonardo.svg" alt="Card leonardo">
+                <img id="samantha" class="card" src="./assets/cards/samantha.svg" alt="Card samantha">
+                <img id="bruna" class="card" src="./assets/cards/bruna.svg" alt="Card bruna">
+                <img id="right-arrow" onclick="moveToRight()" class="arrow" src="./assets/icons/right-arrow.svg" alt="right arrow">
+            </div>
+        </div>
+
+        <!-- Form -->
+        <div id="form">
+            <h1 id="form-title">Start now and take the next step in your career</h1>
+            <form action="https://api.sheetmonkey.io/form/pxhqNoFKMcMjw3nVgTonf3" method="post">
+                <input type="text" name="Name" placeholder="Name" required><br>
+                <input type="email" name="Email" placeholder="Email" required><br>
+                <input type="number" name="Phone" placeholder="Phone Number" required><br>
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                <button type="submit">Get the free PDF</button>
+            </form>
+        </div>
+        
+    </body>
+</html>
